@@ -1,0 +1,10 @@
+.main
+  .row
+    - [1,2,3].each do |number|
+      .col-md-4.chat{id: "user#{number}"}
+        .messages.well
+        %form.form-inline
+          .form-group
+            %input.form-control{:placeholder => "User #{number.ordinalize}" }
+          %button.btn.btn-success
+            submit
